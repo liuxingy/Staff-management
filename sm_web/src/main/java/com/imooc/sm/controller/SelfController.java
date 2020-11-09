@@ -36,8 +36,16 @@ public class SelfController {
         } else {
             HttpSession session = request.getSession();
             session.setAttribute("USER", login);
+            response.sendRedirect("main.do");
         }
     }
+
+    public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+            HttpSession session = request.getSession();
+            session.setAttribute("USER", null);
+            response.sendRedirect("toLogin.do");
+        }
+
 
     public void main(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("index.jsp").forward(request,response);

@@ -18,7 +18,7 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
- <!-- <filter>
+  <filter>
     <filter-name>Login</filter-name>
     <filter-class>com.imooc.sm.global.LoginFilter</filter-class>
   </filter>
@@ -30,7 +30,7 @@
   <filter-mapping>
     <filter-name>Login</filter-name>
     <url-pattern>*.do</url-pattern>
-  </filter-mapping>-->
+  </filter-mapping>
 
 
   <servlet>
